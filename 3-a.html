@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <title>Football scoreboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+    <div clas="row">
+        <div class="row header">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-12"><h4>3-A CAPE FEAR VALLEY<h4></div>
+        </div>
+        <div class="row header2">
+            <div class="col-xs-3">Team</div>
+            <div class="col-xs-1">Conf.</div>
+            <div class="col-xs-1">All</div>
+            <div class="col-xs-1">PF</div>
+            <div class="col-xs-1">PA</div>
+
+        </div>
+        <div id="content"></div>
+            <script class="sports-template" type="text/x-handlebars-template">
+                <div class="entry">
+                    <div class="row schools">
+                        <div class="col-xs-3" >
+                            <a target="_blank" href="{{TeamLink}}"><h5 id="team">{{Team}}</h5></a>
+                        </div>
+                        <div class="col-xs-1 standings">
+                            <p>{{Conf}}</p>
+                        </div>
+                        <div class="col-xs-1 standings">
+                            <p>{{All}}</p>
+                        </div>
+                        <div class="col-xs-1 standings">
+                            <p>{{PF}}</p>
+                        </div>
+                        <div class="col-xs-1 standings">
+                            <p>{{PA}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tabletop.js"></script>
+<script type="text/javascript" src="handlebars/handlebars.js"></script>
+<script src="js/getdata2.js"></script>
+<script src="js/modernizr.js"></script>
+
+
+
+
+
+</body>
+</html>
